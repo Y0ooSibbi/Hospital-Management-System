@@ -1,3 +1,3 @@
 # Hospital-Management-System
 
-For reading all the prescription
+Complete Hopital Managemenst System
