@@ -178,7 +178,7 @@ export default function Login(props) {
       </div>
       <img
         src={profile}
-        alt="profile pic"
+               alt="profile pic"
         className="h-20 my-6 border-2 rounded-full"
       />
       <form className="flex flex-col w-full px-8" onSubmit={handleLogin}>

@@ -30,7 +30,7 @@ const AdminSidebar = (props) => {
           </div>
           <div className="heading font-poppins font-bold text-xl  ">
             <Link to="/">
-              <h1>Public health Record System</h1>
+              <h1>Hospital Management System</h1>
             </Link>
           </div>
         </div>

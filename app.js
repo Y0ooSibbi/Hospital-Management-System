@@ -8,6 +8,7 @@ const registerRoute = require("./routes/registerRoute");
 const doctorRoute = require("./routes/doctorRoute");
 const adminRoutes = require("./routes/adminRoutes");
 const logoutRoute = require("./routes/logoutRoute");
+const sendMail = require("./routes/sendMail");
 const { requireAdminAuth } = require("./middlewares/adminAuthMiddleware");
 const app = express();
 const cors = require("cors");
@@ -45,6 +46,7 @@ mongoose
     app.use(patientRoutes);
     app.use(adminRoutes);
     app.use(logoutRoute);
+    app.use(sendMail);
     if (process.env.NODE_ENV == "production") {
       app.use(express.static("client/build"));
       const path = require("path");
