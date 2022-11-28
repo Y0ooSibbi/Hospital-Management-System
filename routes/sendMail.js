@@ -2,7 +2,6 @@ const express = require("express");
 const router = new express.Router();
 const nodemailer = require("nodemailer");
 const mailConfig = require('../config/mailConfig');
-//Aryan added here 
 
 
 
