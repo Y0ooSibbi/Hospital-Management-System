@@ -1,3 +1,3 @@
 # Hospital-Management-System
 
-Complete Hopital Managemenst System
+Complete Hospital Managemenst System
