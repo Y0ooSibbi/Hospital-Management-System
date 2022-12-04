@@ -14,7 +14,7 @@ export default function Login(props) {
 
   useEffect(() => {
     const auth = async () => {
-      const res = await fetch(`http://localhost:5000/auth`);
+      const res = await fetch(`/auth`);
       const data = await res.json();
       if (data.msg === "Doctor Login Found") {
         navigate("/doctor/dashboard");
