@@ -6,7 +6,7 @@ const DoctorList = (props) => {
   const [doctorList, setDoctorList] = useState([]);
   useEffect(() => {
     async function fetchDoctorList() {
-      const res = await fetch("/doctorlist", {
+      const res = await fetch("/api/v1/doctorlist", {
         credentials: "include",
       });
       const data = await res.json();

@@ -11,7 +11,7 @@ export default function LandingPage(props) {
 
       <div className="body lg:flex px-16 w-full lg:h-5/6 ">
         <img
-          src={Vector}
+          src="https://www.karexpert.com/wp-content/uploads/2020/05/advance-bg.png"
           alt="Graphics"
           className="lg:w-1/2 lg:my-auto lg:mx-auto mt-24"
         />

@@ -9,7 +9,7 @@ import { useState } from "react";
 const DashboardSidebar = (props) => {
   const navigate = useNavigate();
   const logout = async () => {
-    const res = await fetch("/logout");
+    const res = await fetch("/api/v1/logout");
     props.settoastCondition({
       status: "success",
       message: "Logged out Successfully!!!",

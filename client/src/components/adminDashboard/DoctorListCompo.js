@@ -5,7 +5,7 @@ import delete_btn from "../../assets/img/dashboard/delete.png";
 const DoctorListCompo = (props) => {
   const navigate = useNavigate();
   const deleteDoctor = async () => {
-    const res = await fetch(`/deletedoctor/${props.id}`, {
+    const res = await fetch(`/api/v1/deletedoctor/${props.id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

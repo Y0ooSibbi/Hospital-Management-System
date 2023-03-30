@@ -63,7 +63,7 @@ const DoctorProfile = (props) => {
 
   useEffect(() => {
     async function getdoctor() {
-      const res = await fetch("/getdoctor");
+      const res = await fetch("/api/v1/getdoctor");
       const data = await res.json();
       if (data.AuthError) {
         props.settoastCondition({

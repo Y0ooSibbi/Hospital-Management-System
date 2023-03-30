@@ -39,15 +39,17 @@ mongoose
       });
     });
     // app.get("/", (req, res) => res.send("server listening at 5000 port!"));
-    
-    app.use(authRoutes);
-    app.use(registerRoute);
-    app.use(doctorRoute);
-    app.use(patientRoutes);
-    app.use(adminRoutes);
-    app.use(logoutRoute);
-    app.use(sendMail);
+    const apiPath = '/api/v1';
+    app.use(apiPath,authRoutes);
+    app.use(apiPath,registerRoute);
+    app.use(apiPath,doctorRoute);
+    app.use(apiPath,patientRoutes);
+    app.use(apiPath,adminRoutes);
+    app.use(apiPath,logoutRoute);
+    app.use(apiPath,sendMail);
+    // console.log('hello');
     if (process.env.NODE_ENV == "production") {
+      console.log('hello');
       app.use(express.static("client/build"));
       const path = require("path");
       app.get("*", function (req, res) {

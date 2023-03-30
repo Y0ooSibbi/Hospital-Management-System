@@ -66,7 +66,7 @@ export default function Register(props) {
     setPasswordError("");
     if (doctor.password === confirmPassword) {
       setLoading(true);
-      const res = await fetch("/register/doctor", {
+      const res = await fetch("/api/v1/register/doctor", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
